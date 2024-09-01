@@ -72,26 +72,18 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
-// const DEFAULT_ADDRESSES: ChainAddresses = {
-//   v3CoreFactoryAddress: '0x1F98431c8aD98523631AE4a59f267346ea31F984',
-//   multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984',
-//   quoterAddress: '0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6',
-//   v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
-//   nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'
-// }
 const DEFAULT_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xFd6D175Da8593bc695ff50464e3CD3124f2488ee',
-  multicallAddress: '0x5574A029e9b1E346D1b4e371CB89e3D4dc07e14c',
-  quoterAddress: '0x514F238f946Cf017ff5F04148a8208082f947Fb3',
-  v3MigratorAddress: '0x2e1f9186912142341B2fc40b32b99Ea9fE1b730B',
-  nonfungiblePositionManagerAddress: '0xA04805D1D79e472e9E25C0B097e820A48f0eF4a1',
-  tickLensAddress: '0x08be74961f31fd283aC7aA2FC8c9Adec94785a59',
-  swapRouter02Address: '0x237826695a575D9Fd2FA7C184E5f37593aBc1529',
+  v3CoreFactoryAddress: '0x1F98431c8aD98523631AE4a59f267346ea31F984',
+  multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984',
+  quoterAddress: '0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6',
+  v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
+  nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'
 }
-// const MAINNET_ADDRESSES: ChainAddresses = {
-//   ...DEFAULT_ADDRESSES,
-//   v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
-// }
+
+const MAINNET_ADDRESSES: ChainAddresses = {
+  ...DEFAULT_ADDRESSES,
+  v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
+}
 // const GOERLI_ADDRESSES: ChainAddresses = {
 //   ...DEFAULT_ADDRESSES,
 //   v1MixedRouteQuoterAddress: '0xBa60b6e6fF25488308789E6e0A65D838be34194e'
@@ -250,10 +242,18 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
 //   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66'
 // }
 
-const MANTLE_ADDRESS = DEFAULT_ADDRESSES;
+const MANTLE_ADDRESS = {
+  v3CoreFactoryAddress: '0xFd6D175Da8593bc695ff50464e3CD3124f2488ee',
+  multicallAddress: '0x5574A029e9b1E346D1b4e371CB89e3D4dc07e14c',
+  quoterAddress: '0x514F238f946Cf017ff5F04148a8208082f947Fb3',
+  v3MigratorAddress: '0x2e1f9186912142341B2fc40b32b99Ea9fE1b730B',
+  nonfungiblePositionManagerAddress: '0xA04805D1D79e472e9E25C0B097e820A48f0eF4a1',
+  tickLensAddress: '0x08be74961f31fd283aC7aA2FC8c9Adec94785a59',
+  swapRouter02Address: '0x237826695a575D9Fd2FA7C184E5f37593aBc1529',
+};
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
-  // [ChainId.MAINNET]: MAINNET_ADDRESSES,
+  [ChainId.MAINNET]: MAINNET_ADDRESSES,
   // [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
   // [ChainId.ARBITRUM_ONE]: ARBITRUM_ONE_ADDRESSES,
   // [ChainId.POLYGON]: POLYGON_ADDRESSES,

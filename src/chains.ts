@@ -26,7 +26,7 @@ export enum ChainId {
 }
 
 export const SUPPORTED_CHAINS = [
-  // ChainId.MAINNET,
+  ChainId.MAINNET,
   // ChainId.OPTIMISM,
   // ChainId.OPTIMISM_GOERLI,
   // ChainId.OPTIMISM_SEPOLIA,
@@ -53,7 +53,7 @@ export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
 export enum NativeCurrencyName {
   // Strings match input for CLI
-  // ETHER = 'ETH',
+  ETHER = 'ETH',
   // MATIC = 'MATIC',
   // CELO = 'CELO',
   // GNOSIS = 'XDAI',
