@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/sdk-core",
+  "name": "@novaswapv3/sdk-core-for-mnt",
   "license": "MIT",
   "version": "4.2.0",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk-core.git",
+  "repository": "https://github.com/zslucky/sdk-core-for-mnt.git",
   "keywords": [
     "uniswap",
     "ethereum"
