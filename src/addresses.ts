@@ -55,6 +55,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   // [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   // [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070'
   [ChainId.MANTLE]: '0x211b74591166485c73c473572220D7D01b2219Cb',
+  [ChainId.HSK]: '',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -75,6 +76,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   // [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   // [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
   [ChainId.MANTLE]: '0x44D7966fc0b9f4d521b83964f13Db9F48875d213',
+  [ChainId.HSK]: '',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -139,6 +141,16 @@ const BNB_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xa191D3C35f558E4586B9F638Ba417fF93E962D7a',
   tickLensAddress: '0xc23637f164a75Cc11270e73354C51Fe523E9d86E',
   swapRouter02Address: '0x891a93698d083a5fd220D8Cbac6d6fb1E6ffc88f'
+}
+
+const HSK_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xaFc77d66222830327aB8B18bAf70e085C9B23017',
+  multicallAddress: '0xaEbAc56361Af2ab1b465830AF133b7f1D86349F1',
+  quoterAddress: '0x48d144F897573Ce4B8A31Dd0C3e02A89A3EcA4c2',
+  v3MigratorAddress: '0xE2B9604D919323fDb9B7a1E1b368f4adda8101AA',
+  nonfungiblePositionManagerAddress: '0xa191D3C35f558E4586B9F638Ba417fF93E962D7a',
+  tickLensAddress: '0xC886142109BC38A509B2D9090cf0d83AfE515bC1',
+  swapRouter02Address: '0x891a93698d083a5fd220D8Cbac6d6fb1E6ffc88f',
 }
 
 // optimism goerli addresses
@@ -308,6 +320,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   // [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   // [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.MANTLE]: MANTLE_ADDRESS,
+  [ChainId.HSK]: HSK_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

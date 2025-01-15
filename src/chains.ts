@@ -23,6 +23,7 @@ export enum ChainId {
   // ROOTSTOCK = 30,
   // BLAST = 81457,
   MANTLE = 5000,
+  HSK = 177,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -48,6 +49,7 @@ export const SUPPORTED_CHAINS = [
   // ChainId.ROOTSTOCK,
   // ChainId.BLAST,
   ChainId.MANTLE,
+  ChainId.HSK,
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -62,4 +64,5 @@ export enum NativeCurrencyName {
   // AVAX = 'AVAX',
   // ROOTSTOCK = 'RBTC',
   MNT = 'MNT',
+  HSK = 'HSK',
 }
