@@ -146,11 +146,11 @@ const BNB_ADDRESSES: ChainAddresses = {
 const HSK_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xaFc77d66222830327aB8B18bAf70e085C9B23017',
   multicallAddress: '0xaEbAc56361Af2ab1b465830AF133b7f1D86349F1',
-  quoterAddress: '0x48d144F897573Ce4B8A31Dd0C3e02A89A3EcA4c2',
-  v3MigratorAddress: '0xE2B9604D919323fDb9B7a1E1b368f4adda8101AA',
-  nonfungiblePositionManagerAddress: '0xa191D3C35f558E4586B9F638Ba417fF93E962D7a',
+  quoterAddress: '0x891a93698d083a5fd220D8Cbac6d6fb1E6ffc88f',
+  v3MigratorAddress: '0xFC259Eb737D29016bBB7De9769261D4BEf9461e8',
+  nonfungiblePositionManagerAddress: '0xE2B9604D919323fDb9B7a1E1b368f4adda8101AA',
   tickLensAddress: '0xC886142109BC38A509B2D9090cf0d83AfE515bC1',
-  swapRouter02Address: '0x891a93698d083a5fd220D8Cbac6d6fb1E6ffc88f',
+  swapRouter02Address: '0x7602Eb43F3E831584c96483bc9e2662732409a44',
 }
 
 // optimism goerli addresses
