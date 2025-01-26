@@ -24,6 +24,7 @@ export enum ChainId {
   // BLAST = 81457,
   MANTLE = 5000,
   HSK = 177,
+  GRAVITY = 1625,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -50,6 +51,7 @@ export const SUPPORTED_CHAINS = [
   // ChainId.BLAST,
   ChainId.MANTLE,
   ChainId.HSK,
+  ChainId.GRAVITY,
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -65,4 +67,5 @@ export enum NativeCurrencyName {
   // ROOTSTOCK = 'RBTC',
   MNT = 'MNT',
   HSK = 'HSK',
+  GRAVITY = 'G',
 }
